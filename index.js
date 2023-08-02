@@ -191,7 +191,7 @@ Aşağıdakileri yapmak için ortalamaKelimeSayisi işlevini kullanın:
 function ortalamaKelimeSayisi(dizi){
   bolen = dizi.length +1
   bolunen = dizi.length+1
-  for (i = 0; i < dizi.length; i++){
+  for (let i = 0; i < dizi.length; i++){
     if (dizi[i].includes(arananTat)){
       bolunen += 1
     }
@@ -220,7 +220,7 @@ function rastgeleTatlar(tatlar1, tatlar2, tatlar3, tatlar4){
 
   let rastgele = Math.floor(Math.random() * tumTatlar.length)
 
-  for (i = 0; i < 26; i++){
+  for (let i = 0; i < 26; i++){
     var x = tumTatlar[rastgele]
     console.log(x);
     console.log(randomTatlar);
